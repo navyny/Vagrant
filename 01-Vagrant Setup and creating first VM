@@ -1,0 +1,32 @@
+1)Create a folder for Vagrant in /home/naveenv/my-vagrant
+
+2)"vagrant init bento/ubuntu-16.04 " This will put default config file(Vagrantfile) in above directory.
+    NOTE : "box" = os in vagrant terminology and can be serached at : https://vagrantcloud.com/search
+   "vagrant init ubuntu/trusty64"
+   NOTE : This will create "Vagrantfile" with a lot of commenets 
+
+Vagrantfile will be: 
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/trusty64"
+end
+
+
+3)vagrant up.   ===> starts and provisions the vagrant environment
+
+If
+Error: Error: SSL certificate problem: self signed certificate in certificate chain
+TRY:  "vagrant box add --insecure ubuntu/trusty64"
+
+NOTE: This will download OS of: ubuntu/trusty64  ---> to Local first. PROVIDER = Virtual box
+
+THEN run "vagrant up"
+
+vagrant status ===> outputs status of the vagrant machine
+vagrant up ====> starts and provisions the vagrant environment
+
+NOTE: At this point I shold be able to see a VM running on Virtual Box GUI. 
+
+4)vagrant ssh  ===> To SSH to the VM
+password of VM: vagrant
+
