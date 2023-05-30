@@ -1,0 +1,11 @@
+Vagrant is used to build VMs
+Vagrat supports certain versions of Virtualbox
+To check which versions of Virtual Box are compatible with Vagrant : https://developer.hashicorp.com/vagrant/docs/providers/virtualbox
+Vurtual Box version suported by Vagrant: 4.0.x, 4.1.x, 4.2.x, 4.3.x, 5.0.x, 5.1.x, 5.2.x, 6.0.x, 6.1.x and 7.0.x.
+
+
+1) Install Virtual box forst
+2) Install Vagrant on MAC OSX using: brew install hashicorp/tap/hashicorp-vagrant
+   2a) Verify the vagrant installtion with : vagrant -h
+
+
